@@ -7,7 +7,10 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['https://sunalgorithms.github.io', 'http://localhost:5173'],
+  origin: [
+    'https://sunalgorithms.onrender.com',
+    'http://localhost:5173'
+  ],
   methods: ['GET', 'POST'],
   credentials: true
 }));
